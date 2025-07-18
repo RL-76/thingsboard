@@ -1,1 +1,8 @@
-thingsboard-deploy/render.yaml
+services:
+  - type: web
+    name: thingsboard
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+
